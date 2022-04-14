@@ -7,6 +7,8 @@ import location from "../../assets/Header/Location.png"
 import { Link } from 'react-router-dom';
 import { fetchFood } from '../../redux/features/food';
 import { getCurrentCart } from '../../redux/features/cart';
+import search from '../../assets/Header/Search.png'
+import CartLine from '../../assets/Header/CartLine.png'
 
 const Header = ({ inputText, setInputText }) => {
     // рабочий Header от Сайд-Мохьмада (начало)
@@ -25,16 +27,6 @@ const Header = ({ inputText, setInputText }) => {
         localStorage.clear();
     };
 
-    let pathToProfile;
-    if (role === "cafe") {
-        pathToProfile = "cafe/orders";
-    } else if (role === "courier") {
-        pathToProfile = "courier/orders";
-    } else if (role === "client") {
-        pathToProfile = "client/orders";
-    }
-
-    const foodsCount = useSelector((state) => state.cart.foods);
 
   useEffect(() => {
     dispatch(fetchFood());
@@ -61,8 +53,6 @@ const Header = ({ inputText, setInputText }) => {
     } else if (role === "client") {
         pathToProfile = "client/orders"
     }
-    const foodsCount = useSelector(state=>state.cart.foods)
-    const foodsCount = useSelector(state => state.cart.foods)
     return (
       <div>
         <div className={style.header}>
@@ -134,8 +124,6 @@ const Header = ({ inputText, setInputText }) => {
        </div>         
       </div>
   );
-
-    );
     // рабочий Header от Сайд-Мохьмада (конец)
 };
 
