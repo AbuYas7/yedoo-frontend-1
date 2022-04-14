@@ -53,6 +53,9 @@ const Header = ({ inputText, setInputText }) => {
     } else if (role === "client") {
         pathToProfile = "client/orders"
     }
+
+    const foodsCount = useSelector((state) => state.cart.foods);
+    
     return (
       <div>
         <div className={style.header}>
