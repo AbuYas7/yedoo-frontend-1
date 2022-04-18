@@ -14,9 +14,9 @@
 - Комментирование рецепта
 - Просмотр раздела "Избранное"
 
-![gif](https://github.com/AbuYas7/yedoo-frontend-1/blob/cafe/filter.gif)
+![gif](https://github.com/AbuYas7/yedoo-frontend-1/cafe/filter.gif)
 
-<!-- - При авторизации есть возможность добавлять новые рецепты, а также удалять их. -->
+- При авторизации есть возможность добавлять новые рецепты, а также удалять их.
 
 <!-- ![gif](https://github.com/AbuYas7/yedoo-frontend-1/blob/cafe/IMG_1337.gif) -->
 
